@@ -8,8 +8,9 @@
 3. Open XAMPP Control Panel and start Apache
 4. Run this command in the project directory to install dependencies: ``` composer install```
 
-**TODO: make the header responsive with hamburger icon**
-**Finish Footer**
+**TODO:** 
+- Make the header responsive with hamburger icon
+- Finish Footer
 
 I used composer to autoload mailtrap and my MailConfig class to send the form as well as store my environment variable for the SMTP password - so this would be needed for the mail to actually send.\
 \
