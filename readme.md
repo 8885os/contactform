@@ -6,7 +6,7 @@
    ```
 2. Move the folder to C:\xampp\htdocs\
 3. Open XAMPP Control Panel and start Apache
-4. Run this command in the project directory to install dependencies: composer install
+4. Run this command in the project directory to install dependencies: ```sh composer install```
 
 **TODO: make the header responsive with hamburger icon**
 **Finish Footer**
