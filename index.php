@@ -9,8 +9,11 @@ $dotenv->load();
 if (!empty($_POST['submit'])) {
     $mailConfig = new  Contact\MailConfig();
     if (isset($_POST['terms']) && $_POST['terms'] == 'Yes') {
+        $email = e($_POST['email']);
+        $name = e($_POST['name']);
+        $message = e($_POST['message']);
 
-        $isMailSent = $mailConfig->sendMail($_POST['email'], $_POST['name'], $_POST['message']) ?? '';
+        $isMailSent = $mailConfig->sendMail($email, $name, $message) ?? '';
         if ($isMailSent) {
             $_POST['email'] = '';
             $_POST['name'] = '';
